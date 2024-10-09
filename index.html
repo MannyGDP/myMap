@@ -5,24 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manny's Geolocation Project</title>
+    
+    <!-- Leaflet CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
     integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
     crossorigin=""/>
+    
     <link rel="stylesheet" href="./style.css" type="text/css" />
+    
+    <!-- JavaScript Files -->
     <script src="app.js" defer></script>
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-   crossorigin=""></script>
-    <style>
-    #map { 
-        height: 400px;
-        background-color: #ccc;
-    }
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
 
-    .leaflet-popup-content-wrapper {
-        width: 100%;
-    }
-  </style>
+    <style>
+        #map { 
+            height: 400px;
+            background-color: #ccc;
+        }
+
+        .leaflet-popup-content-wrapper {
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
     <form>
@@ -32,7 +38,7 @@
             <option value="hotel">Hotels</option>
             <option value="market">Markets</option>
         </select>
-        <button id="submit">Submit</button>
+        <button id="submit" type="button">Submit it!</button> <!-- Added type="button" to prevent default form submission -->
     </form>
     <div id="map"></div>
 </body>

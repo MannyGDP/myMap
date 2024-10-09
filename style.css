@@ -3,12 +3,33 @@ body {
     padding:0;
     background-color: rgb(168, 143, 143);
 }
+.text-content {
+    text-align: center;
+}
+
+#business-select-title {
+    font-size: 5rem;
+}
+
 #map {
-    background-color: rgb(147, 153, 200);
-    height: 40vh;
+    height: 60vh;
     width: 90%;
     border: 1px solid black;
     margin: 5%;
+    background-color: rgb(147, 153, 200);
+}
+
+#map::before{
+    content: 'LOADING';
+    font-size: 3em;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    margin-top: 3em;
+}
+
+.leaflet-popup-content-wrapprt {
+    width: 100%;
 }
 
 main {

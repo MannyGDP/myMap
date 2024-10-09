@@ -1,0 +1,17 @@
+body {
+    margin:20px;
+    padding:0;
+    background-color: rgb(168, 143, 143);
+}
+#map {
+    background-color: rgb(147, 153, 200);
+    height: 40vh;
+    width: 90%;
+    border: 1px solid black;
+    margin: 5%;
+}
+
+main {
+    width: 90%;
+
+}
